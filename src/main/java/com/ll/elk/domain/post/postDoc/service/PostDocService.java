@@ -21,4 +21,8 @@ public class PostDocService {
 
         return postDocRepository.save(postDoc);
     }
+
+    public void truncate() {
+        postDocRepository.deleteAll();
+    }
 }
